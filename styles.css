@@ -1,0 +1,60 @@
+#parent {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #558a56;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: whitesmoke
+}
+
+h1, p {
+    text-align: center;
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    color: black !important;
+}
+
+.converter label,
+.converter select,
+.converter input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.converter button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.converter button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#historical-rates-container {
+    margin-top: 20px;
+}
+

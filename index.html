@@ -8,7 +8,13 @@
   </head>
   <body>
     <h1>Currency Converter</h1>
-    <div id="popularConversions">Dollar to Euro, Dollar to Yen, Euro to Yen</div>
+    <p>The left side shows popular currency conversions. On the right, select your base currency, amount, and target currency, then click "View Latest Rates" to get a real-time conversion. Select a date and then click "View Historical Rates" to see the conversion rate for any day since 1999.</p>
+    <div id="parent">
+    <div id="popularConversions" class="converter">
+        <br><button id="dollarToEuroBtn">USD to EUR</button><div id="dollarToEuro"></div>
+        <button id="dollarToYenBtn">USD to Yen</button><div id="dollarToYen"></div>
+        <button id="dollarToRupeeBtn">USD to Rupee</button><div id="dollarToRupee"></div>
+    </div><br>
     <div class="converter">
       <form method="get" id="converterForm" name="converterForm">
         <label for="baseCurrency">Base Currency:</label>
@@ -31,5 +37,6 @@
       <div id="historicalRatesContainer"></div>
     <script type="module" src="currency.mjs"></script>
     <script type="module" src="main.mjs"></script>
-  </body>
+    <script type="module" src="popular.mjs"></script>
+</div></body>
 </html>
