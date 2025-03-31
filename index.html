@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Currency Converter</h1>
-    <p>The left side shows popular currency conversions. On the right, select your base currency, amount, and target currency, then click "View Latest Rates" to get a real-time conversion. Select a date and then click "View Historical Rates" to see the conversion rate for any day since 1999.</p>
+    <p>The left side shows popular currency conversions. Click the button to get real-time updates.</p><p> On the right, select your base currency, amount, and target currency, then click "View Latest Rates" to get a real-time conversion. Select a date and then click "View Historical Rates" to see the conversion rate for any day since 1999.</p>
     <div id="parent">
     <div id="popularConversions" class="converter">
         <br><button id="dollarToEuroBtn">USD to EUR</button><div id="dollarToEuro"></div>
@@ -23,13 +23,13 @@
         <input type="number" id="amount" value="1" min="1" />
         <label for="targetCurrency">Target Currency:</label>
         <select id="targetCurrency"></select>
-        <p>Converted Amount: <span id="convertedAmount"></span></p>
+        <p><span id="convertedAmount"></span></p>
         <button id="latestRates" type="button" class="submit">
           View Latest Rates
         </button>
         <label for="date">Date:</label>
         <input type="date" id="date" />
-        <p>Converted Amount: <span id="historicalConvertedAmount"></span></p>
+        <p><span id="historicalConvertedAmount"></span></p>
         <button id="historicalRates" type="button" class="submit">
           View Historical Rates
         </button>
